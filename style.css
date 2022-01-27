@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas:
+    "head head head"
+    "main mainCenter mainLeft"
+    "foot foot foot";
+  grid-template-rows: 15% 70% 15%;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#page > header {
+  grid-area: head;
+  background-color: #8ca0ff;
+}
+
+#page > main {
+  grid-area: main;
+  background-color: #ffff64;
+  width: 100%;
+  height: 600px;
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: #8cffa0;
+  height: 200px;
+  width: 100%;
+}
+.mainLeft {
+  grid-area: mainLeft;
+  background-color: chartreuse;
+  width: 100%;
+  height: 600px;
+}
+
+.mainCenter {
+  grid-area: mainCenter;
+  background-color: crimson;
+  width: 100%;
+  height: 600px;
+}
